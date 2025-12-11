@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.93 54.14">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #373932;
+        stroke-miterlimit: 10;
+      }
+
+      .c {
+        fill: #373932;
+      }
+    </style>
+  </defs>
+  <rect class="b" x=".5" y=".5" width="209.93" height="53.14" rx="26.57" ry="26.57"/>
+  <circle class="c" cx="185.07" cy="27.07" r="5.12"/>
+</svg>
