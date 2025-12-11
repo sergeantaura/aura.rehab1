@@ -88,7 +88,40 @@ a {
   color: var(--text);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1080px) {
+  .landing {
+    padding: 40px 28px;
+  }
+
+  .landing__content {
+    gap: 28px;
+    max-width: 820px;
+  }
+
+  .logo {
+    width: min(460px, 68vw);
+  }
+
+  .links {
+    width: min(520px, 82vw);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 22px;
+  }
+
+  .link {
+    width: 100%;
+    padding: 13px 0;
+    font-size: 15px;
+  }
+
+  .motto {
+    font-size: 15px;
+    letter-spacing: 0.15em;
+  }
+}
+
+@media (max-width: 767px) {
   body {
     padding: 16px 0;
   }
