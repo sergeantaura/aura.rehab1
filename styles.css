@@ -1,0 +1,74 @@
+:root {
+  --background: #ffffff;
+  --text: #373932;
+  --accent: #373932;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.logo {
+  width: 320px;
+  max-width: 70vw;
+  height: auto;
+}
+
+.button-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: var(--background);
+  color: var(--text);
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pill-button:hover,
+.pill-button:focus-visible {
+  background-color: var(--accent);
+  color: #ffffff;
+  outline: none;
+}
+
+.motto {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
