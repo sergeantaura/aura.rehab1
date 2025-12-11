@@ -3,119 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura Rehab</title>
+  <title>Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container hero__content">
-      <div>
-        <p class="pill">Recovery, reimagined</p>
-        <h1>Find your path back to balance.</h1>
-        <p class="lead">Aura Rehab pairs science-backed programs with compassionate coaches so you can heal with confidence.</p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="#programs">View Programs</a>
-          <a class="button button--ghost" href="#contact">Talk to a specialist</a>
-        </div>
-      </div>
-      <div class="card hero__card">
-        <h2>Start your personalized plan</h2>
-        <form class="hero__form">
-          <label for="goal">Primary goal</label>
-          <select id="goal" name="goal">
-            <option value="">Select one</option>
-            <option>Physical therapy</option>
-            <option>Post-surgery recovery</option>
-            <option>Mental wellness</option>
-            <option>Chronic pain relief</option>
-          </select>
-          <label for="email">Work email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-          <button type="submit" class="button button--primary button--full">Get my plan</button>
-          <p class="help">No spam. We respect your inbox.</p>
-        </form>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="section" id="programs">
-      <div class="container">
-        <h2 class="section__title">Programs tailored to you</h2>
-        <p class="section__subtitle">From first consultation to full recovery, we deliver structured care designed around your goals.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Guided therapy</h3>
-            <p>Weekly 1:1 sessions with licensed specialists who keep you motivated and on track.</p>
-          </article>
-          <article class="card">
-            <h3>Recovery roadmap</h3>
-            <p>Step-by-step plans with milestones, reminders, and check-ins to measure progress.</p>
-          </article>
-          <article class="card">
-            <h3>Community support</h3>
-            <p>Access group sessions and peer forums moderated by clinicians.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--highlight" id="benefits">
-      <div class="container split">
-        <div>
-          <p class="pill">Why Aura</p>
-          <h2 class="section__title">Care that adapts as you do</h2>
-          <ul class="list">
-            <li>Data-informed recommendations that evolve with your recovery.</li>
-            <li>Secure messaging with your care team for quick answers.</li>
-            <li>Easy scheduling, progress tracking, and exercises in one dashboard.</li>
-          </ul>
-          <a class="button button--primary" href="#contact">Schedule a call</a>
-        </div>
-        <div class="card card--shadow">
-          <h3>Member spotlight</h3>
-          <p class="quote">“Aura gave me confidence to get back on my feet after surgery. The check-ins kept me accountable and supported.”</p>
-          <p class="quote__author">— Jamie, recovered in 12 weeks</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container split split--center">
-        <div>
-          <h2 class="section__title">Ready to begin?</h2>
-          <p class="section__subtitle">Tell us a little about your goals and we will match you with the right specialist.</p>
-        </div>
-        <div>
-          <form class="card" id="contactForm">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Alex Morgan" required>
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" placeholder="you@example.com" required>
-            <label for="message">What do you need help with?</label>
-            <textarea id="message" name="message" rows="4" placeholder="Share your goals" required></textarea>
-            <button type="submit" class="button button--primary button--full">Submit</button>
-            <p class="help" id="formStatus" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__content">
-      <div>
-        <strong>Aura Rehab</strong>
-        <p class="muted">Recovery programs crafted by clinicians, designed for humans.</p>
-      </div>
-      <nav class="footer__nav">
-        <a href="#programs">Programs</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#contact">Contact</a>
+  <main class="landing">
+    <div class="landing__content">
+      <img class="logo" src="assets/logo.svg" alt="Aura logo">
+      <nav class="links" aria-label="Primary">
+        <a class="link" href="#">bot</a>
+        <a class="link" href="#">telegram</a>
+        <a class="link" href="#">X</a>
+        <a class="link" href="#">manual</a>
       </nav>
+      <p class="motto">IN AURA WE TRADE</p>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
+  </main>
 </body>
 </html>
