@@ -1,10 +1,8 @@
 :root {
   --background: #ffffff;
   --text: #373932;
-  --button-bg: #ffffff;
   --button-text: #373932;
-  --button-border: #373932;
-  --button-hover: #f4f4f4;
+  --button-hover: #f7f7f7;
 }
 
 * {
@@ -52,7 +50,7 @@ a {
 
 .links {
   display: flex;
-  gap: 24px;
+  gap: 36px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -62,21 +60,25 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 30px;
-  border-radius: 999px;
-  border: 1px solid var(--button-border);
-  background: var(--button-bg);
+  width: clamp(150px, 22vw, 212px);
+  height: clamp(46px, 5vw, 54px);
+  padding: 0 30px;
+  border: none;
+  background-image: url('assets/btn.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--button-text);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+  transition: filter 0.15s ease, transform 0.15s ease;
 }
 
 .link:hover,
 .link:focus-visible {
-  background: var(--button-hover);
-  box-shadow: 0 0 0 2px rgba(55, 57, 50, 0.1);
+  filter: brightness(0.97);
+  transform: translateY(-1px);
   outline: none;
 }
 
@@ -106,12 +108,14 @@ a {
     width: min(520px, 82vw);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px 22px;
+    gap: 18px 22px;
   }
 
   .link {
     width: 100%;
-    padding: 13px 0;
+    height: clamp(46px, 6vw, 54px);
+    padding: 0 20px;
+    background-size: 100% 100%;
     font-size: 15px;
   }
 
@@ -148,7 +152,9 @@ a {
 
   .link {
     width: 100%;
-    padding: 12px 0;
+    height: clamp(44px, 6vw + 30px, 52px);
+    padding: 0 18px;
+    background-size: 100% 100%;
     font-size: 14px;
   }
 
