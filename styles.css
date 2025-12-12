@@ -81,9 +81,9 @@ a {
 
 .links {
   width: min(64rem, 100%);
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(6.5rem, 1fr));
+  justify-items: center;
   gap: clamp(0.75rem, 2vw, 1.5rem) clamp(1rem, 3vw, 1.75rem);
   padding: 0 clamp(0.5rem, 2vw, 1.25rem);
   box-sizing: border-box;
