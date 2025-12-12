@@ -138,8 +138,16 @@ a {
   .links {
     display: grid;
     grid-template-columns: repeat(2, minmax(7rem, 1fr));
+    grid-template-areas:
+      "bot manual"
+      "telegram x";
     max-width: 20rem;
   }
+
+  .link:nth-child(1) { grid-area: bot; }
+  .link:nth-child(2) { grid-area: telegram; }
+  .link:nth-child(3) { grid-area: x; }
+  .link:nth-child(4) { grid-area: manual; }
 
   .logo {
     width: clamp(18rem, 69.6vw, 31.2rem);
