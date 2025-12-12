@@ -72,8 +72,8 @@ a {
 }
 
 .logo {
-  width: clamp(18rem, 50vw, 34rem);
-  max-height: min(56vh, 38rem);
+  width: clamp(21.6rem, 60vw, 40.8rem);
+  max-height: min(67.2vh, 45.6rem);
   height: auto;
   display: block;
   margin: 0 auto;
@@ -91,15 +91,15 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(3.5rem, 5vw, 4rem);
-  padding: 0 clamp(1.25rem, 3vw, 1.75rem);
+  height: clamp(1.75rem, 2.5vw, 2rem);
+  padding: 0 clamp(0.625rem, 1.5vw, 0.875rem);
   border: none;
   background-image: url('assets/btn.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--button-text);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-size: clamp(0.9rem, 0.85rem + 0.125vw, 1rem);
   font-weight: 600;
   letter-spacing: 0.02em;
   transition: filter 0.15s ease, transform 0.15s ease;
@@ -136,8 +136,8 @@ a {
   }
 
   .logo {
-    width: clamp(15rem, 58vw, 26rem);
-    max-height: 45vh;
+    width: clamp(18rem, 69.6vw, 31.2rem);
+    max-height: 54vh;
   }
 }
 
@@ -147,11 +147,11 @@ a {
   }
 
   .link {
-    font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+    font-size: clamp(0.85rem, 0.8rem + 0.25vw, 0.95rem);
   }
 
   .logo {
-    width: clamp(13rem, 70vw, 22rem);
-    max-height: 42vh;
+    width: clamp(15.6rem, 84vw, 26.4rem);
+    max-height: 50.4vh;
   }
 }
