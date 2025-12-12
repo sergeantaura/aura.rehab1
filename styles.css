@@ -13,7 +13,7 @@ body {
   height: 100%;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 *,
@@ -46,12 +46,16 @@ a {
 
 .landing {
   width: 100%;
+  height: 100vh;
+  height: 100dvh;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 5vw, 2.5rem);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .landing__content {
@@ -62,6 +66,9 @@ a {
   width: min(68rem, 100%);
   max-width: 90vw;
   text-align: center;
+  transform-origin: center center;
+  transform: scale(var(--content-scale, 1));
+  will-change: transform;
 }
 
 .logo {
@@ -75,7 +82,7 @@ a {
 .links {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: repeat(2, minmax(12rem, 1fr));
   gap: clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 3vw, 1.75rem);
 }
 
@@ -124,7 +131,7 @@ a {
   }
 
   .links {
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-columns: repeat(2, minmax(10.5rem, 1fr));
     max-width: 28rem;
   }
 
@@ -141,11 +148,6 @@ a {
 
   .link {
     font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
-  }
-
-  .links {
-    grid-template-columns: 1fr;
-    width: 100%;
   }
 
   .logo {
