@@ -82,9 +82,9 @@ a {
 .links {
   width: min(64rem, 100%);
   display: grid;
-  grid-template-columns: repeat(4, minmax(6.5rem, 1fr));
+  grid-template-columns: repeat(4, minmax(8.25rem, 1fr));
   justify-items: center;
-  gap: clamp(0.75rem, 2vw, 1.5rem) clamp(1rem, 3vw, 1.75rem);
+  gap: clamp(0.85rem, 2.25vw, 1.65rem) clamp(1.15rem, 3vw, 1.9rem);
   padding: 0 clamp(0.5rem, 2vw, 1.25rem);
   box-sizing: border-box;
 }
@@ -94,13 +94,13 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 9.25rem;
-  height: clamp(1.625rem, 2.375vw, 1.95rem);
-  padding: 0 clamp(0.625rem, 1.5vw, 0.925rem);
+  max-width: 12.5rem;
+  height: clamp(2.55rem, 3.5vw, 3.25rem);
+  padding: 0 clamp(0.875rem, 1.85vw, 1.1rem);
   margin-inline: auto;
   border: none;
   background-image: url('assets/btn.svg');
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--button-text);
@@ -137,8 +137,8 @@ a {
 
   .links {
     display: grid;
-    grid-template-columns: repeat(2, minmax(5.25rem, 1fr));
-    max-width: 18rem;
+    grid-template-columns: repeat(2, minmax(7rem, 1fr));
+    max-width: 20rem;
   }
 
   .logo {
