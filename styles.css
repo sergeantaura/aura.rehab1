@@ -1,8 +1,8 @@
 :root {
-  --background: #ffffff;
+  --background: #f7f7f5;
   --text: #373932;
   --button-text: #373932;
-  --button-hover: #f7f7f7;
+  --button-hover: #f1f1ed;
 }
 
 html,
@@ -53,7 +53,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 5vw, 2.5rem);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 2.75rem);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -62,9 +62,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(1.25rem, 2.75vw, 2.25rem);
-  width: min(68rem, 100%);
-  max-width: 90vw;
+  gap: clamp(1.75rem, 3vw, 2.75rem);
+  width: min(70rem, 100%);
+  max-width: 92vw;
   text-align: center;
   transform-origin: center center;
   transform: scale(var(--content-scale, 1));
@@ -72,18 +72,21 @@ a {
 }
 
 .logo {
-  width: clamp(18rem, 50vw, 34rem);
-  max-height: min(56vh, 38rem);
+  width: clamp(20rem, 48vw, 34rem);
+  max-height: min(58vh, 40rem);
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .links {
-  width: 100%;
+  width: min(48rem, 100%);
   display: grid;
-  grid-template-columns: repeat(2, minmax(12rem, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 3vw, 1.75rem);
+  grid-template-columns: repeat(2, minmax(14rem, 1fr));
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2rem);
+  padding: 0 clamp(0.75rem, 2vw, 1.5rem);
+  box-sizing: border-box;
 }
 
 .link {
@@ -91,18 +94,20 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(3.5rem, 5vw, 4rem);
-  padding: 0 clamp(1.25rem, 3vw, 1.75rem);
+  max-width: 18.5rem;
+  height: clamp(3.25rem, 4.75vw, 3.9rem);
+  padding: 0 clamp(1.25rem, 3vw, 1.85rem);
+  margin-inline: auto;
   border: none;
   background-image: url('assets/btn.svg');
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--button-text);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  font-weight: 600;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  font-weight: 500;
   letter-spacing: 0.02em;
-  transition: filter 0.15s ease, transform 0.15s ease;
+  transition: filter 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
 }
 
 .link:hover,
@@ -115,7 +120,7 @@ a {
 .motto {
   margin: 0;
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text);
   text-align: center;
